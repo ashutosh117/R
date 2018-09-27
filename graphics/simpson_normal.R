@@ -1,4 +1,4 @@
-#to estimate the normal density and distribution function using simpsons rule
+# the normal density and distribution function are estimate using simpsons rule.
 rm(list=ls())
 simpson1 <- function(a,b,ftn,n=100){
   n <- max(2*(n%/%2),4)
