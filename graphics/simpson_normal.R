@@ -15,7 +15,7 @@ simpson1 <- function(a,b,ftn,n=100){
   }
   vec[n+1] <- vec[n] + (h/3)*ftn(b)
   library(animation)
-  
+  #create animation and save in HTML format
   saveHTML({
     ani.options(interval=0.001,ani.width=700,ani.height=700)
     for(i in 1:length(vec)){
